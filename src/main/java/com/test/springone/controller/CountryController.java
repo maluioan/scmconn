@@ -22,7 +22,10 @@ public class CountryController {
 
 	@RequestMapping(value = "/countries", method = RequestMethod.GET)
 	public List<Country> getCountries() {
-		logger.info("Enetering /countries -> getCountries()");
+		if (logger.isDebugEnabled()) {
+			logger.debug("Enetering /countries -> getCountries()");
+		}
+		
 		return countryService.createCountryList();
 	}
 
