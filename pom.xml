@@ -144,7 +144,7 @@
 						</goals>
 						<configuration>
 							<message>Default push message</message>
-							<username>malu</username>
+							<username>cocoimarius@.com</username>
 							<password>parola.pt.push</password>
 						</configuration>
 					</execution>
