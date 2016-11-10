@@ -142,11 +142,11 @@
 						<goals>
 							<goal>checkin</goal>
 						</goals>
-<!-- 						<configuration> -->
-<!-- 							<message>Default push message</message> -->
-<!-- 							<username>cocoimarius@gmail.com</username> -->
-<!-- 							<password>parola.pt.github</password> -->
-<!-- 						</configuration> -->
+						<configuration>
+							<message>Default push message</message>
+							<username>cocoimarius@gmail.com</username>
+							<password>parola.pt.push</password>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
