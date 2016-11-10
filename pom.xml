@@ -142,9 +142,11 @@
 						<goals>
 							<goal>checkin</goal>
 						</goals>
-<!-- 						<configuration> -->
-<!-- 							<message>Message from pom</message> -->
-<!-- 						</configuration> -->
+						<configuration>
+							<message>Default push message</message>
+							<username>ioan</username>
+							<password>parola.pt.github</password>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
