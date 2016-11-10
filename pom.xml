@@ -7,8 +7,8 @@
 	<packaging>war</packaging>
 
 	<scm>
-		<connection>git@github.com:maluioan/scmconn.git</connection>
-		<developerConnection>git@github.com:maluioan/scmconn.git</developerConnection>
+		<connection>scm:git:ssh://github.com/maluioan/scmconn</connection>
+		<developerConnection>scm:git:ssh://github.com/maluioan/scmconn</developerConnection>
 		<url>https://github.com/maluioan/scmconn</url>
 	</scm>
 
@@ -117,7 +117,7 @@
 				<executions>
 					<execution>
 						<id>DeployInPackagePhaseNotInstall</id>
-						<phase>package</phase>
+						<phase>install</phase>
 						<goals>
 							<goal>redeploy</goal>
 						</goals>
@@ -130,6 +130,20 @@
 					<username>malu</username>
 					<password>hubabuba</password>
 				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>test</id>
+						<phase>install</phase>
+						<goals>
+							<goal>checkin</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 
 		</plugins>
