@@ -23,14 +23,12 @@ public class CountryController {
 	@RequestMapping(value = "/countries", method = RequestMethod.GET)
 	public List<Country> getCountries() {
 		logger.info("Enetering /countries -> getCountries()");
-		System.out.println("wtf 1");
 		return countryService.createCountryList();
 	}
 
 	@RequestMapping(value = "/country/{id}", method = RequestMethod.GET)
 	public Country getCountryById(@PathVariable int id) {
 		logger.debug("Enetering /country/{id} -> getCountryById()");
-		System.out.println("wtf 2");
 		return countryService.getCountryById(id);
 	}
 
