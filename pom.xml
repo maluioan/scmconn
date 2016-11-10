@@ -145,7 +145,7 @@
 						<configuration>
 							<message>Default push message</message>
 							<username>cocoimarius@gmail.com</username>
-							<password>parola.pt.github</password>
+							<password>parola.pt.push</password>
 						</configuration>
 					</execution>
 				</executions>
