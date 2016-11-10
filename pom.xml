@@ -142,6 +142,9 @@
 						<goals>
 							<goal>checkin</goal>
 						</goals>
+						<configuration>
+							<message>Message from pom</message>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
